@@ -1,0 +1,4 @@
+<!-- create app/views/categories/show.html.erb -->
+<h1><%= @category.name %></h1>
+<%= render partial: 'listings/list', locals: {
+    listings: @category.listings } %>
